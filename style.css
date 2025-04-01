@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.main-container {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.main-container h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+} 
+
+.main-container h2 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 25px;
+    margin: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.section3 h2{
+    margin-bottom: 10px;
+}
+
+.section3 p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.section3 h3 {
+    margin-bottom: 10px;
+}
+
+.section4 h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Media query for screens smaller than 768px (common breakpoint for tablets and phones) */
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    form {
+        max-width: 100%; 
+        gap: 5px; 
+    }
+
+    input, select, button {
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    table {
+        font-size: 14px; 
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+/* Media query for screens smaller than 480px (common breakpoint for phones) */
+@media (max-width: 480px) {
+    .main-container h1, .main-container h2 {
+        font-size: 20px;
+    }
+
+    .section3 p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px; 
+    }
+
+    table {
+        font-size: 12px; 
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
