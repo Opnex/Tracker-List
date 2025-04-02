@@ -14,7 +14,7 @@ updateUI();
 
 // Handle form submission
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     const description = descriptionInput.value;
     const amount = parseFloat(amountInput.value);
